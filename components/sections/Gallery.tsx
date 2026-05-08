@@ -1,7 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import { GlossyButton } from "@/components/ui/GlossyButton";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal, StaggerContainer, StaggerItem } from "@/components/ui/Reveal";
+import { PortfolioSlideshow } from "@/components/ui/PortfolioSlideshow";
 import { WORK_CATEGORIES, PORTFOLIO_ITEMS } from "@/lib/constants";
 
 export function Gallery() {
@@ -28,75 +30,58 @@ export function Gallery() {
         </Reveal>
 
         {/* ── 4 Category Cards ─────────────────────────────────────────── */}
-        <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <StaggerContainer className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-16">
           {WORK_CATEGORIES.map((cat) => (
             <StaggerItem key={cat.id}>
-              <div className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-surface aspect-[4/3]">
+              <div className="group relative overflow-hidden rounded-xl border border-white/[0.08] bg-surface aspect-[3/2]">
                 <Image
                   src={cat.src}
                   alt={cat.alt}
                   fill
-                  sizes="(max-width: 640px) 100vw, 50vw"
+                  sizes="(max-width: 640px) 50vw, 25vw"
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
-                {/* Persistent dark vignette at bottom */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                {/* Content pinned to bottom-left */}
-                <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6">
-                  <p className="text-[10px] text-brand-gold/60 tracking-[0.2em] uppercase mb-1">
-                    {cat.description}
-                  </p>
-                  <h3 className="text-lg md:text-xl font-semibold text-white tracking-wide">
+                <div className="absolute bottom-0 left-0 right-0 p-3">
+                  <h3 className="text-sm font-semibold text-white tracking-wide leading-tight">
                     {cat.label}
                   </h3>
                 </div>
-                {/* Gold top-left corner accent */}
-                <span
-                  className="absolute top-4 left-4 block w-5 h-5 border-t border-l border-brand-gold/30 rounded-tl"
-                  aria-hidden="true"
-                />
-                <span
-                  className="absolute bottom-4 right-4 block w-5 h-5 border-b border-r border-brand-gold/30 rounded-br"
-                  aria-hidden="true"
-                />
               </div>
             </StaggerItem>
           ))}
         </StaggerContainer>
 
-        {/* ── Portfolio grid (shown only when photos have been added) ──── */}
-        {PORTFOLIO_ITEMS.length > 0 && (
-          <div className="mt-16">
-            <Reveal className="mb-10 flex justify-center">
-              <SectionHeading
-                eyebrow="Completed Projects"
-                title="Recent installs."
-                description="A selection of finished work from our shop."
-              />
-            </Reveal>
-            <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {PORTFOLIO_ITEMS.map((item) => (
-                <StaggerItem key={item.src}>
-                  <div className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-surface aspect-[4/3]">
-                    <Image
-                      src={item.src}
-                      alt={item.alt}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                      <span className="text-xs text-white font-medium">{item.caption}</span>
-                    </div>
-                  </div>
-                </StaggerItem>
-              ))}
-            </StaggerContainer>
+        {/* ── Portfolio Slideshow ───────────────────────────────────────── */}
+        <Reveal className="mb-6">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="h-px flex-1 bg-white/[0.06]" />
+            <span className="text-[10px] tracking-[0.25em] uppercase text-brand-gold/60">
+              Recent Projects
+            </span>
+            <div className="h-px flex-1 bg-white/[0.06]" />
           </div>
-        )}
+          <PortfolioSlideshow slides={PORTFOLIO_ITEMS} />
+        </Reveal>
 
-        <Reveal delay={0.2} className="mt-12 flex justify-center">
+        {/* ── View Full Gallery link ───────────────────────────────────── */}
+        <Reveal delay={0.15} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Link
+            href="/gallery"
+            className="inline-flex items-center gap-2 text-sm text-brand-gold hover:text-white transition-colors duration-200 group"
+          >
+            View Full Gallery
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              className="transition-transform duration-200 group-hover:translate-x-1"
+            >
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </Link>
+          <span className="hidden sm:block text-white/10">·</span>
           <GlossyButton as="a" href="#contact" size="md">
             Inquire About Your Project
           </GlossyButton>
@@ -105,4 +90,5 @@ export function Gallery() {
     </section>
   );
 }
+
 

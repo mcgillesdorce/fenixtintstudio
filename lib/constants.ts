@@ -26,7 +26,7 @@ export const BUSINESS = {
 export const NAV_LINKS = [
   { label: "Home", href: "#home" },
   { label: "Services", href: "#services" },
-  { label: "Gallery", href: "#gallery" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];
@@ -153,7 +153,27 @@ export const WORK_CATEGORIES = [
   },
 ] as const;
 
-// ─── Full portfolio grid (added when project photos are ready) ────────────────
-// Drop photos into /public/gallery/ and add entries here.
-// Format: { src: "/gallery/your-photo.jpg", alt: "...", caption: "..." }
-export const PORTFOLIO_ITEMS: { src: string; alt: string; caption: string }[] = [];
+// ─── Full portfolio grid ──────────────────────────────────────────────────────
+// To add more photos: drop them into /public/portfoliopics/ and add an entry.
+export const PORTFOLIO_ITEMS = [
+  { src: "/portfoliopics/473578457_10164361048247228_86957041076435235_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/474836818_10164376340887228_1802729376340542013_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/484972027_18332798674090117_6909031944975543417_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/490578743_10164650939762228_1376180101100196217_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/491801307_10164701071862228_6717747387104018992_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/491803497_10164701071382228_730399038957690463_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/491841265_10164701072547228_7536796071425011364_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/492042895_10164701071097228_8783384502858568673_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/492333680_10164701071372228_4489154333077613668_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/492344369_10164701071567228_8216120265477030236_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/492400487_10164701072457228_5401670217190403962_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/493315177_10164701071747228_9051986956286571538_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/494481860_10164739799547228_234904755953946876_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/515067403_10165055723152228_7226557609009082473_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/516070055_10165055722847228_813285714532445440_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/549776018_10165464539322228_944949634616803431_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/550423217_10165464539647228_7695648918585440642_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/555855178_10165512981367228_7919695636013453007_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/556539158_10165512976852228_7279009983743444670_n.jpg", alt: "Window tint project", caption: "" },
+  { src: "/portfoliopics/574564178_10165680025157228_3521427061187150106_n.jpg", alt: "Window tint project", caption: "" },
+] as const;

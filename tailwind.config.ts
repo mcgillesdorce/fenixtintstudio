@@ -44,10 +44,15 @@ const config: Config = {
           "0%": { backgroundPosition: "-200% 0" },
           "100%": { backgroundPosition: "200% 0" },
         },
+        progress: {
+          "0%": { width: "0%" },
+          "100%": { width: "100%" },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.6s ease forwards",
         shimmer: "shimmer 2s linear infinite",
+        progress: "progress 5s linear forwards",
       },
       borderColor: {
         DEFAULT: "rgba(255,255,255,0.08)",
