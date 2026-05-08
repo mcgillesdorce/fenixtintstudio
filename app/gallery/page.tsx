@@ -71,15 +71,17 @@ export default function GalleryPage() {
           <p className="text-zinc-400 text-sm mb-6">
             Ready to transform your vehicle, home, or building?
           </p>
-          <Link
-            href="/#contact"
+          <a
+            href="https://meetings-na2.hubspot.com/will-m"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-white/5 border border-white/10 text-sm text-white hover:bg-white/10 hover:border-white/20 transition-all duration-200"
           >
-            Get a Free Estimate
+            Book a Free Estimate
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-          </Link>
+          </a>
         </div>
       </main>
       <Footer />

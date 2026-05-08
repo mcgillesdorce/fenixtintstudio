@@ -1,7 +1,7 @@
 export function getMeetingUrl(): string {
   return (
     process.env.NEXT_PUBLIC_HUBSPOT_MEETING_URL ||
-    "https://meetings.hubspot.com/placeholder"
+    "https://meetings-na2.hubspot.com/will-m"
   );
 }
 
