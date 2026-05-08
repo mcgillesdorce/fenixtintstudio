@@ -1,13 +1,93 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'>
+﻿<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'>
   <defs>
-    <radialGradient id='g01' cx='50%' cy='50%' r='60%'>
-      <stop offset='0%' stop-color='#1A1A1A'/>
+    <radialGradient id='bg' cx='50%' cy='65%' r='55%'>
+      <stop offset='0%' stop-color='#1C1500'/>
+      <stop offset='60%' stop-color='#0D0D0D'/>
       <stop offset='100%' stop-color='#0A0A0A'/>
     </radialGradient>
+    <linearGradient id='body' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#282828'/>
+      <stop offset='45%' stop-color='#1A1A1A'/>
+      <stop offset='100%' stop-color='#101010'/>
+    </linearGradient>
+    <linearGradient id='glass' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#080808'/>
+      <stop offset='100%' stop-color='#040404'/>
+    </linearGradient>
+    <radialGradient id='whl' cx='50%' cy='50%' r='50%'>
+      <stop offset='0%' stop-color='#252525'/>
+      <stop offset='65%' stop-color='#0F0F0F'/>
+      <stop offset='100%' stop-color='#181818'/>
+    </radialGradient>
+    <radialGradient id='glow' cx='50%' cy='0%' r='100%'>
+      <stop offset='0%' stop-color='#C9A84C' stop-opacity='0.1'/>
+      <stop offset='100%' stop-color='#C9A84C' stop-opacity='0'/>
+    </radialGradient>
   </defs>
-  <rect width='1200' height='800' fill='url(#g01)'/>
-  <rect x='540' y='340' width='120' height='1' fill='rgba(255,255,255,0.12)'/>
-  <text x='600' y='380' font-family='system-ui,sans-serif' font-size='14' fill='rgba(255,255,255,0.25)' text-anchor='middle' letter-spacing='3'>SEDAN — CERAMIC FILM</text>
-  <text x='600' y='420' font-family='system-ui,sans-serif' font-size='11' fill='rgba(255,255,255,0.1)' text-anchor='middle' letter-spacing='2'>PLACEHOLDER - REPLACE WITH REAL PHOTO</text>
-  <rect x='540' y='440' width='120' height='1' fill='rgba(255,255,255,0.06)'/>
+  <rect width='1200' height='800' fill='url(#bg)'/>
+  <ellipse cx='600' cy='790' rx='550' ry='110' fill='url(#glow)'/>
+  <line x1='80' y1='660' x2='1120' y2='660' stroke='#C9A84C' stroke-opacity='0.07' stroke-width='1'/>
+  <!-- Lamborghini-style exotic body -->
+  <path d='M 155,638 L 155,600 C 158,568 175,538 210,515 L 270,484 C 310,467 365,452 425,440 L 525,426 C 555,420 575,413 595,402 L 635,378 C 665,356 710,336 760,328 L 870,322 C 912,320 952,328 982,344 L 1005,360 C 1020,374 1030,394 1035,416 L 1040,445 L 1040,600 L 1040,638 Z' fill='url(#body)'/>
+  <!-- Hood highlight -->
+  <path d='M 160,595 C 188,548 220,518 265,496 L 380,460 C 420,448 465,436 525,428 L 590,420 L 555,416 C 495,424 450,436 410,448 L 295,482 C 248,502 218,530 194,570 Z' fill='white' fill-opacity='0.035'/>
+  <!-- Sill -->
+  <path d='M 215,622 L 1005,622 L 1040,638 L 155,638 Z' fill='#0D0D0D'/>
+  <line x1='216' y1='615' x2='1004' y2='615' stroke='#C9A84C' stroke-opacity='0.22' stroke-width='0.8'/>
+  <!-- Front splitter -->
+  <path d='M 108,634 L 190,598 L 195,626 L 115,638 Z' fill='#0A0A0A'/>
+  <!-- Windshield dark tint -->
+  <path d='M 596,402 L 636,377 L 658,354 L 744,336 L 760,336 L 652,420 Z' fill='url(#glass)' opacity='0.97'/>
+  <!-- Side windows dark tint -->
+  <path d='M 760,336 L 870,322 L 940,328 L 982,340 L 936,382 L 760,398 Z' fill='url(#glass)' opacity='0.97'/>
+  <!-- Window frames gold -->
+  <path d='M 596,402 L 636,377 L 658,354 L 744,336 L 760,336' fill='none' stroke='#C9A84C' stroke-width='0.9' stroke-opacity='0.3' stroke-linejoin='round'/>
+  <path d='M 760,336 L 870,322 L 940,328 L 982,340 L 936,382 L 760,398 Z' fill='none' stroke='#C9A84C' stroke-width='0.9' stroke-opacity='0.25'/>
+  <!-- Window shine -->
+  <path d='M 666,352 L 740,338 L 754,344 L 680,360 Z' fill='white' fill-opacity='0.03'/>
+  <!-- Mirror -->
+  <path d='M 571,415 L 558,402 L 561,390 L 588,396 L 588,420 Z' fill='#1A1A1A' stroke='#282828' stroke-width='0.8'/>
+  <!-- Door line -->
+  <line x1='758' y1='398' x2='1003' y2='510' stroke='#252525' stroke-width='1.2'/>
+  <!-- Air vents -->
+  <path d='M 455,457 L 520,443 L 525,462 L 460,477 Z' fill='#070707' stroke='#222' stroke-width='0.8'/>
+  <line x1='461' y1='461' x2='518' y2='448' stroke='#333' stroke-width='0.7'/>
+  <line x1='462' y1='466' x2='519' y2='453' stroke='#333' stroke-width='0.7'/>
+  <line x1='463' y1='471' x2='520' y2='458' stroke='#333' stroke-width='0.7'/>
+  <!-- Headlight strip -->
+  <path d='M 155,570 L 192,552 L 197,568 L 162,584 Z' fill='#181818'/>
+  <line x1='163' y1='572' x2='192' y2='558' stroke='#C9A84C' stroke-opacity='0.15' stroke-width='2'/>
+  <!-- Rear wing -->
+  <path d='M 975,344 L 1060,316 L 1068,334 L 985,360 Z' fill='#141414' stroke='#1E1E1E' stroke-width='0.8'/>
+  <!-- Exhausts -->
+  <circle cx='1018' cy='605' r='9' fill='#080808' stroke='#1E1E1E' stroke-width='1.5'/>
+  <circle cx='1033' cy='605' r='9' fill='#080808' stroke='#1E1E1E' stroke-width='1.5'/>
+  <!-- Front wheel -->
+  <circle cx='295' cy='648' r='70' fill='#0D0D0D' stroke='#1E1E1E' stroke-width='3'/>
+  <circle cx='295' cy='648' r='56' fill='url(#whl)'/>
+  <line x1='295' y1='592' x2='295' y2='704' stroke='#343434' stroke-width='3.5' stroke-linecap='round'/>
+  <line x1='241' y1='619' x2='349' y2='677' stroke='#343434' stroke-width='3.5' stroke-linecap='round'/>
+  <line x1='241' y1='677' x2='349' y2='619' stroke='#343434' stroke-width='3.5' stroke-linecap='round'/>
+  <line x1='257' y1='594' x2='333' y2='702' stroke='#343434' stroke-width='3.5' stroke-linecap='round'/>
+  <line x1='333' y1='594' x2='257' y2='702' stroke='#343434' stroke-width='3.5' stroke-linecap='round'/>
+  <circle cx='295' cy='648' r='19' fill='#191919' stroke='#252525' stroke-width='2'/>
+  <path d='M 268,592 L 278,598 L 278,614 L 268,608 Z' fill='#C9A84C' fill-opacity='0.65'/>
+  <!-- Rear wheel -->
+  <circle cx='910' cy='648' r='70' fill='#0D0D0D' stroke='#1E1E1E' stroke-width='3'/>
+  <circle cx='910' cy='648' r='56' fill='url(#whl)'/>
+  <line x1='910' y1='592' x2='910' y2='704' stroke='#343434' stroke-width='3.5' stroke-linecap='round'/>
+  <line x1='856' y1='619' x2='964' y2='677' stroke='#343434' stroke-width='3.5' stroke-linecap='round'/>
+  <line x1='856' y1='677' x2='964' y2='619' stroke='#343434' stroke-width='3.5' stroke-linecap='round'/>
+  <line x1='872' y1='594' x2='948' y2='702' stroke='#343434' stroke-width='3.5' stroke-linecap='round'/>
+  <line x1='948' y1='594' x2='872' y2='702' stroke='#343434' stroke-width='3.5' stroke-linecap='round'/>
+  <circle cx='910' cy='648' r='19' fill='#191919' stroke='#252525' stroke-width='2'/>
+  <path d='M 883,592 L 893,598 L 893,614 L 883,608 Z' fill='#C9A84C' fill-opacity='0.65'/>
+  <!-- Shadows -->
+  <ellipse cx='295' cy='720' rx='85' ry='10' fill='black' fill-opacity='0.45'/>
+  <ellipse cx='910' cy='720' rx='85' ry='10' fill='black' fill-opacity='0.45'/>
+  <!-- Caption -->
+  <line x1='490' y1='48' x2='710' y2='48' stroke='#C9A84C' stroke-opacity='0.22' stroke-width='0.75'/>
+  <text x='600' y='82' font-family='system-ui,sans-serif' font-size='13' fill='#C9A84C' text-anchor='middle' letter-spacing='5' opacity='0.88'>EXOTIC SUPERCAR</text>
+  <text x='600' y='103' font-family='system-ui,sans-serif' font-size='10' fill='rgba(255,255,255,0.35)' text-anchor='middle' letter-spacing='3'>CERAMIC TINT — 15% VLT</text>
+  <line x1='490' y1='115' x2='710' y2='115' stroke='#C9A84C' stroke-opacity='0.08' stroke-width='0.75'/>
 </svg>

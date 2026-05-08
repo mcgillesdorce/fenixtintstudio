@@ -1,13 +1,100 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'>
+﻿<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'>
   <defs>
-    <radialGradient id='g08' cx='50%' cy='50%' r='60%'>
-      <stop offset='0%' stop-color='#1A1A1A'/>
+    <radialGradient id='sky' cx='50%' cy='30%' r='65%'>
+      <stop offset='0%' stop-color='#0C0C10'/>
       <stop offset='100%' stop-color='#0A0A0A'/>
     </radialGradient>
+    <linearGradient id='wall' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#262626'/>
+      <stop offset='100%' stop-color='#181818'/>
+    </linearGradient>
+    <linearGradient id='glass' x1='0' y1='0' x2='1' y2='0'>
+      <stop offset='0%' stop-color='#060608'/>
+      <stop offset='40%' stop-color='#09090E'/>
+      <stop offset='100%' stop-color='#060608'/>
+    </linearGradient>
+    <radialGradient id='glow' cx='50%' cy='100%' r='55%'>
+      <stop offset='0%' stop-color='#C9A84C' stop-opacity='0.07'/>
+      <stop offset='100%' stop-color='#C9A84C' stop-opacity='0'/>
+    </radialGradient>
   </defs>
-  <rect width='1200' height='800' fill='url(#g08)'/>
-  <rect x='540' y='340' width='120' height='1' fill='rgba(255,255,255,0.12)'/>
-  <text x='600' y='380' font-family='system-ui,sans-serif' font-size='14' fill='rgba(255,255,255,0.25)' text-anchor='middle' letter-spacing='3'>COMMERCIAL OFFICE</text>
-  <text x='600' y='420' font-family='system-ui,sans-serif' font-size='11' fill='rgba(255,255,255,0.1)' text-anchor='middle' letter-spacing='2'>PLACEHOLDER - REPLACE WITH REAL PHOTO</text>
-  <rect x='540' y='440' width='120' height='1' fill='rgba(255,255,255,0.06)'/>
+  <rect width='1200' height='800' fill='url(#sky)'/>
+  <ellipse cx='600' cy='770' rx='580' ry='90' fill='url(#glow)'/>
+  <!-- Street / ground -->
+  <rect x='0' y='660' width='1200' height='140' fill='#0B0B0B'/>
+  <line x1='0' y1='660' x2='1200' y2='660' stroke='#C9A84C' stroke-opacity='0.09' stroke-width='1'/>
+  <!-- OFFICE BUILDING — 3 stories -->
+  <!-- Main building block -->
+  <rect x='180' y='100' width='840' height='560' fill='url(#wall)'/>
+  <!-- Roof parapet -->
+  <rect x='172' y='92' width='856' height='14' fill='#222' stroke='#2A2A2A' stroke-width='0.8'/>
+  <rect x='180' y='90' width='840' height='10' fill='#1E1E1E'/>
+  <!-- Roof top details (HVAC boxes) -->
+  <rect x='350' y='75' width='60' height='18' rx='2' fill='#1A1A1A' stroke='#222' stroke-width='0.6'/>
+  <rect x='580' y='70' width='80' height='22' rx='2' fill='#1A1A1A' stroke='#222' stroke-width='0.6'/>
+  <rect x='800' y='76' width='55' height='16' rx='2' fill='#1A1A1A' stroke='#222' stroke-width='0.6'/>
+  <!-- Floor dividers (horizontal bands) -->
+  <line x1='180' y1='286' x2='1020' y2='286' stroke='#1E1E1E' stroke-width='6'/>
+  <line x1='180' y1='473' x2='1020' y2='473' stroke='#1E1E1E' stroke-width='6'/>
+  <!-- Floor labels subtle lines -->
+  <line x1='180' y1='289' x2='1020' y2='289' stroke='#C9A84C' stroke-opacity='0.08' stroke-width='0.8'/>
+  <line x1='180' y1='476' x2='1020' y2='476' stroke='#C9A84C' stroke-opacity='0.08' stroke-width='0.8'/>
+  <!-- === THIRD FLOOR WINDOWS (top) === -->
+  <!-- 4 windows per floor, evenly spaced -->
+  <rect x='218' y='120' width='160' height='148' fill='url(#glass)' rx='1'/>
+  <polygon points='218,120 320,120 218,175' fill='white' fill-opacity='0.012'/>
+  <rect x='418' y='120' width='160' height='148' fill='url(#glass)' rx='1'/>
+  <polygon points='418,120 520,120 418,175' fill='white' fill-opacity='0.012'/>
+  <rect x='622' y='120' width='160' height='148' fill='url(#glass)' rx='1'/>
+  <polygon points='622,120 724,120 622,175' fill='white' fill-opacity='0.012'/>
+  <rect x='822' y='120' width='160' height='148' fill='url(#glass)' rx='1'/>
+  <polygon points='822,120 924,120 822,175' fill='white' fill-opacity='0.012'/>
+  <!-- 3F window outlines -->
+  <rect x='218' y='120' width='160' height='148' fill='none' stroke='#C9A84C' stroke-opacity='0.12' stroke-width='1' rx='1'/>
+  <rect x='418' y='120' width='160' height='148' fill='none' stroke='#C9A84C' stroke-opacity='0.12' stroke-width='1' rx='1'/>
+  <rect x='622' y='120' width='160' height='148' fill='none' stroke='#C9A84C' stroke-opacity='0.12' stroke-width='1' rx='1'/>
+  <rect x='822' y='120' width='160' height='148' fill='none' stroke='#C9A84C' stroke-opacity='0.12' stroke-width='1' rx='1'/>
+  <!-- === SECOND FLOOR WINDOWS === -->
+  <rect x='218' y='306' width='160' height='148' fill='url(#glass)' rx='1'/>
+  <polygon points='218,306 320,306 218,361' fill='white' fill-opacity='0.012'/>
+  <rect x='418' y='306' width='160' height='148' fill='url(#glass)' rx='1'/>
+  <polygon points='418,306 520,306 418,361' fill='white' fill-opacity='0.012'/>
+  <rect x='622' y='306' width='160' height='148' fill='url(#glass)' rx='1'/>
+  <polygon points='622,306 724,306 622,361' fill='white' fill-opacity='0.012'/>
+  <rect x='822' y='306' width='160' height='148' fill='url(#glass)' rx='1'/>
+  <polygon points='822,306 924,306 822,361' fill='white' fill-opacity='0.012'/>
+  <!-- 2F window outlines -->
+  <rect x='218' y='306' width='160' height='148' fill='none' stroke='#C9A84C' stroke-opacity='0.12' stroke-width='1' rx='1'/>
+  <rect x='418' y='306' width='160' height='148' fill='none' stroke='#C9A84C' stroke-opacity='0.12' stroke-width='1' rx='1'/>
+  <rect x='622' y='306' width='160' height='148' fill='none' stroke='#C9A84C' stroke-opacity='0.12' stroke-width='1' rx='1'/>
+  <rect x='822' y='306' width='160' height='148' fill='none' stroke='#C9A84C' stroke-opacity='0.12' stroke-width='1' rx='1'/>
+  <!-- === GROUND FLOOR === -->
+  <!-- Glass storefront on ground floor, full-width -->
+  <rect x='180' y='493' width='840' height='167' fill='url(#glass)' rx='1'/>
+  <polygon points='180,493 500,493 180,560' fill='white' fill-opacity='0.01'/>
+  <rect x='180' y='493' width='840' height='167' fill='none' stroke='#C9A84C' stroke-opacity='0.14' stroke-width='1' rx='1'/>
+  <!-- Ground floor mullions -->
+  <rect x='390' y='493' width='12' height='167' fill='#1E1E1E'/>
+  <rect x='596' y='493' width='12' height='167' fill='#1E1E1E'/>
+  <rect x='798' y='493' width='12' height='167' fill='#1E1E1E'/>
+  <!-- Entry door (center-left panel) -->
+  <rect x='458' y='558' width='80' height='102' fill='#050508' stroke='#C9A84C' stroke-opacity='0.18' stroke-width='1'/>
+  <!-- Door push bar -->
+  <line x1='462' y1='612' x2='534' y2='612' stroke='#C9A84C' stroke-opacity='0.3' stroke-width='2' stroke-linecap='round'/>
+  <!-- Building number / address plaque -->
+  <rect x='552' y='630' width='96' height='22' rx='2' fill='#161616' stroke='#252525' stroke-width='0.6'/>
+  <text x='600' y='645' font-family='system-ui,sans-serif' font-size='10' fill='#C9A84C' text-anchor='middle' letter-spacing='3' opacity='0.5'>STE 100</text>
+  <!-- Vertical side trim -->
+  <rect x='172' y='100' width='10' height='560' fill='#1E1E1E'/>
+  <rect x='1018' y='100' width='10' height='560' fill='#1E1E1E'/>
+  <!-- Lighting sconces -->
+  <circle cx='340' cy='104' r='4' fill='#C9A84C' fill-opacity='0.25'/>
+  <circle cx='860' cy='104' r='4' fill='#C9A84C' fill-opacity='0.25'/>
+  <ellipse cx='340' cy='112' rx='22' ry='8' fill='#C9A84C' fill-opacity='0.03'/>
+  <ellipse cx='860' cy='112' rx='22' ry='8' fill='#C9A84C' fill-opacity='0.03'/>
+  <!-- Caption -->
+  <line x1='490' y1='718' x2='710' y2='718' stroke='#C9A84C' stroke-opacity='0.18' stroke-width='0.75'/>
+  <text x='600' y='748' font-family='system-ui,sans-serif' font-size='12' fill='#C9A84C' text-anchor='middle' letter-spacing='5' opacity='0.82'>COMMERCIAL OFFICE</text>
+  <text x='600' y='768' font-family='system-ui,sans-serif' font-size='10' fill='rgba(255,255,255,0.28)' text-anchor='middle' letter-spacing='3'>SOLAR CONTROL — 3-STORY INSTALL</text>
+  <line x1='490' y1='780' x2='710' y2='780' stroke='#C9A84C' stroke-opacity='0.07' stroke-width='0.75'/>
 </svg>

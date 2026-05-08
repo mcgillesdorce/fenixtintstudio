@@ -1,13 +1,96 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'>
+﻿<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'>
   <defs>
-    <radialGradient id='g03' cx='50%' cy='50%' r='60%'>
-      <stop offset='0%' stop-color='#1A1A1A'/>
+    <radialGradient id='sky' cx='50%' cy='40%' r='60%'>
+      <stop offset='0%' stop-color='#0E0E12'/>
       <stop offset='100%' stop-color='#0A0A0A'/>
     </radialGradient>
+    <linearGradient id='facade' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#282828'/>
+      <stop offset='100%' stop-color='#1A1A1A'/>
+    </linearGradient>
+    <linearGradient id='glass' x1='0' y1='0' x2='1' y2='0'>
+      <stop offset='0%' stop-color='#060608'/>
+      <stop offset='50%' stop-color='#08080C'/>
+      <stop offset='100%' stop-color='#060608'/>
+    </linearGradient>
+    <linearGradient id='fascia' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#202020'/>
+      <stop offset='100%' stop-color='#161616'/>
+    </linearGradient>
+    <radialGradient id='glow' cx='50%' cy='100%' r='60%'>
+      <stop offset='0%' stop-color='#C9A84C' stop-opacity='0.08'/>
+      <stop offset='100%' stop-color='#C9A84C' stop-opacity='0'/>
+    </radialGradient>
   </defs>
-  <rect width='1200' height='800' fill='url(#g03)'/>
-  <rect x='540' y='340' width='120' height='1' fill='rgba(255,255,255,0.12)'/>
-  <text x='600' y='380' font-family='system-ui,sans-serif' font-size='14' fill='rgba(255,255,255,0.25)' text-anchor='middle' letter-spacing='3'>COMMERCIAL STOREFRONT</text>
-  <text x='600' y='420' font-family='system-ui,sans-serif' font-size='11' fill='rgba(255,255,255,0.1)' text-anchor='middle' letter-spacing='2'>PLACEHOLDER - REPLACE WITH REAL PHOTO</text>
-  <rect x='540' y='440' width='120' height='1' fill='rgba(255,255,255,0.06)'/>
+  <!-- Sky -->
+  <rect width='1200' height='800' fill='url(#sky)'/>
+  <!-- Ground glow -->
+  <ellipse cx='600' cy='760' rx='600' ry='100' fill='url(#glow)'/>
+  <!-- Pavement -->
+  <rect x='0' y='650' width='1200' height='150' fill='#0C0C0C'/>
+  <line x1='0' y1='650' x2='1200' y2='650' stroke='#C9A84C' stroke-opacity='0.1' stroke-width='1'/>
+  <!-- Pavement markings -->
+  <line x1='200' y1='720' x2='1000' y2='720' stroke='#1E1E1E' stroke-width='1' stroke-dasharray='40,30'/>
+  <!-- BUILDING STRUCTURE -->
+  <!-- Main facade wall -->
+  <rect x='150' y='160' width='900' height='490' fill='url(#facade)'/>
+  <!-- Fascia / sign band top -->
+  <rect x='150' y='160' width='900' height='120' fill='url(#fascia)'/>
+  <!-- Fascia bottom rule line -->
+  <line x1='150' y1='280' x2='1050' y2='280' stroke='#C9A84C' stroke-opacity='0.25' stroke-width='1.5'/>
+  <!-- Business name on fascia -->
+  <text x='600' y='228' font-family='system-ui,sans-serif' font-size='28' font-weight='300' fill='#C9A84C' text-anchor='middle' letter-spacing='10' opacity='0.75'>FENIX GARAGE TINT STUDIO</text>
+  <text x='600' y='262' font-family='system-ui,sans-serif' font-size='11' fill='rgba(255,255,255,0.25)' text-anchor='middle' letter-spacing='5'>COMMERCIAL WINDOW FILM</text>
+  <!-- Roofline trim -->
+  <rect x='140' y='152' width='920' height='12' fill='#222' stroke='#2A2A2A' stroke-width='0.8'/>
+  <!-- TINTED GLASS PANELS — 3 equal sections -->
+  <!-- Left panel -->
+  <rect x='165' y='288' width='255' height='355' fill='url(#glass)' rx='1'/>
+  <!-- Left panel reflection (top corner diagonal) -->
+  <polygon points='165,288 280,288 165,360' fill='white' fill-opacity='0.015'/>
+  <!-- Center panel -->
+  <rect x='473' y='288' width='254' height='355' fill='url(#glass)' rx='1'/>
+  <polygon points='473,288 588,288 473,360' fill='white' fill-opacity='0.015'/>
+  <!-- Right panel -->
+  <rect x='780' y='288' width='255' height='355' fill='url(#glass)' rx='1'/>
+  <polygon points='780,288 895,288 780,360' fill='white' fill-opacity='0.015'/>
+  <!-- Glass panel gold outlines -->
+  <rect x='165' y='288' width='255' height='355' fill='none' stroke='#C9A84C' stroke-opacity='0.15' stroke-width='1' rx='1'/>
+  <rect x='473' y='288' width='254' height='355' fill='none' stroke='#C9A84C' stroke-opacity='0.15' stroke-width='1' rx='1'/>
+  <rect x='780' y='288' width='255' height='355' fill='none' stroke='#C9A84C' stroke-opacity='0.15' stroke-width='1' rx='1'/>
+  <!-- Mullion columns (structural dividers) -->
+  <rect x='420' y='280' width='53' height='370' fill='#1C1C1C'/>
+  <rect x='727' y='280' width='53' height='370' fill='#1C1C1C'/>
+  <!-- Mullion highlights -->
+  <line x1='425' y1='280' x2='425' y2='650' stroke='#2A2A2A' stroke-width='1'/>
+  <line x1='732' y1='280' x2='732' y2='650' stroke='#2A2A2A' stroke-width='1'/>
+  <!-- Center door in center panel -->
+  <rect x='523' y='508' width='154' height='135' fill='#060608' stroke='#C9A84C' stroke-opacity='0.2' stroke-width='1'/>
+  <!-- Door handle -->
+  <rect x='565' y='570' width='30' height='4' rx='2' fill='#C9A84C' fill-opacity='0.4'/>
+  <rect x='605' y='570' width='30' height='4' rx='2' fill='#C9A84C' fill-opacity='0.4'/>
+  <!-- Interior light bleed (subtle warm glow through glass) -->
+  <rect x='166' y='289' width='253' height='353' fill='#C9A84C' fill-opacity='0.01'/>
+  <rect x='474' y='289' width='252' height='353' fill='#C9A84C' fill-opacity='0.01'/>
+  <rect x='781' y='289' width='253' height='353' fill='#C9A84C' fill-opacity='0.01'/>
+  <!-- Exterior columns flanking building -->
+  <rect x='134' y='160' width='18' height='490' fill='#1C1C1C' stroke='#222' stroke-width='0.5'/>
+  <rect x='1048' y='160' width='18' height='490' fill='#1C1C1C' stroke='#222' stroke-width='0.5'/>
+  <!-- Base trim / threshold -->
+  <rect x='134' y='644' width='932' height='8' fill='#1A1A1A' stroke='#252525' stroke-width='0.5'/>
+  <!-- Outdoor lights on fascia -->
+  <circle cx='260' cy='175' r='5' fill='#C9A84C' fill-opacity='0.3'/>
+  <circle cx='480' cy='175' r='5' fill='#C9A84C' fill-opacity='0.3'/>
+  <circle cx='720' cy='175' r='5' fill='#C9A84C' fill-opacity='0.3'/>
+  <circle cx='940' cy='175' r='5' fill='#C9A84C' fill-opacity='0.3'/>
+  <!-- Light glow beneath them -->
+  <ellipse cx='260' cy='185' rx='30' ry='12' fill='#C9A84C' fill-opacity='0.04'/>
+  <ellipse cx='480' cy='185' rx='30' ry='12' fill='#C9A84C' fill-opacity='0.04'/>
+  <ellipse cx='720' cy='185' rx='30' ry='12' fill='#C9A84C' fill-opacity='0.04'/>
+  <ellipse cx='940' cy='185' rx='30' ry='12' fill='#C9A84C' fill-opacity='0.04'/>
+  <!-- Caption -->
+  <line x1='490' y1='44' x2='710' y2='44' stroke='#C9A84C' stroke-opacity='0.18' stroke-width='0.75'/>
+  <text x='600' y='78' font-family='system-ui,sans-serif' font-size='12' fill='#C9A84C' text-anchor='middle' letter-spacing='5' opacity='0.82'>COMMERCIAL STOREFRONT</text>
+  <text x='600' y='98' font-family='system-ui,sans-serif' font-size='10' fill='rgba(255,255,255,0.3)' text-anchor='middle' letter-spacing='3'>SOLAR CONTROL FILM — DUAL PANE</text>
+  <line x1='490' y1='110' x2='710' y2='110' stroke='#C9A84C' stroke-opacity='0.07' stroke-width='0.75'/>
 </svg>

@@ -112,13 +112,13 @@ export const TESTIMONIALS = [
 ];
 
 export const GALLERY_ITEMS = [
-  { src: "/gallery/work-01.svg", alt: "Ceramic tint on luxury sedan", caption: "Sedan — Ceramic Film" },
+  { src: "/gallery/work-01.svg", alt: "Lamborghini exotic supercar with ceramic window tint", caption: "Exotic Supercar — 15% VLT" },
   { src: "/gallery/work-02.svg", alt: "SUV with dark window tint", caption: "SUV — 20% VLT" },
-  { src: "/gallery/work-03.svg", alt: "Office storefront tinting", caption: "Commercial Storefront" },
-  { src: "/gallery/work-04.svg", alt: "Sports car with precision tint", caption: "Sports Car — 35% VLT" },
+  { src: "/gallery/work-03.svg", alt: "Modern commercial storefront with solar control window film", caption: "Commercial Storefront" },
+  { src: "/gallery/work-04.svg", alt: "GT sports coupe with nano-ceramic tint", caption: "GT Sports Coupe — 35% VLT" },
   { src: "/gallery/work-05.svg", alt: "Residential sunroom film", caption: "Residential — Sunroom" },
   { src: "/gallery/work-06.svg", alt: "Truck with full window tint", caption: "Truck — Full Package" },
-  { src: "/gallery/work-07.svg", alt: "Luxury SUV tinting detail", caption: "Luxury SUV — Nano-Ceramic" },
-  { src: "/gallery/work-08.svg", alt: "Office building window film", caption: "Commercial Office" },
+  { src: "/gallery/work-07.svg", alt: "Track supercar with ceramic tint and rear spoiler", caption: "Track Supercar — 20% VLT" },
+  { src: "/gallery/work-08.svg", alt: "Small commercial office building with solar control window film", caption: "Commercial Office — 3 Stories" },
   { src: "/gallery/work-09.svg", alt: "Custom decorative window film", caption: "Custom — Decorative Film" },
 ];

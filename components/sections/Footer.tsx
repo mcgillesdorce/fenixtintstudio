@@ -5,32 +5,33 @@ import { BUSINESS, NAV_LINKS, SERVICES } from "@/lib/constants";
 function FenixMark() {
   return (
     <svg width="34" height="34" viewBox="0 0 100 100" fill="none" aria-hidden="true">
-      <polygon
-        points="96,50 73,10.2 27,10.2 4,50 27,89.8 73,89.8"
-        fill="none"
-        stroke="#C9A84C"
-        strokeWidth="3.5"
-        strokeLinejoin="round"
-      />
-      <polygon
-        points="90,50 69,15.4 31,15.4 10,50 31,84.6 69,84.6"
-        fill="none"
-        stroke="#C9A84C"
-        strokeWidth="0.9"
-        strokeLinejoin="round"
-        opacity={0.5}
-      />
-      <path d="M 47,50 C 42,47 33,44 22,46 C 29,41 39,43 46,48 C 38,40 29,37 18,38 C 26,33 37,37 45,44 Z" fill="#C9A84C" />
-      <path d="M 53,50 C 58,47 67,44 78,46 C 71,41 61,43 54,48 C 62,40 71,37 82,38 C 74,33 63,37 55,44 Z" fill="#C9A84C" />
-      <ellipse cx="50" cy="56" rx="3.5" ry="6" fill="#C9A84C" />
-      <circle cx="50" cy="45" r="3" fill="#C9A84C" />
-      <path d="M 48.5,42 L 50,38.5 L 51.5,42 Z" fill="#C9A84C" />
-      <path d="M 50,62 C 48,69 46,77 44,84 C 47,77 49,69 50,64 Z" fill="#C9A84C" opacity={0.85} />
-      <path d="M 50,62 C 52,69 54,77 56,84 C 53,77 51,69 50,64 Z" fill="#C9A84C" opacity={0.85} />
-      <path d="M 49,63 C 45,72 39,81 34,89 C 40,80 47,70 49,63 Z" fill="#C9A84C" opacity={0.55} />
-      <path d="M 51,63 C 55,72 61,81 66,89 C 60,80 53,70 51,63 Z" fill="#C9A84C" opacity={0.55} />
-      <path d="M 38,37 C 39.5,32 43,29.5 47,29 L 53,29 C 57,29.5 60.5,32 62,37 Z" fill="#C9A84C" opacity={0.9} />
-      <path d="M 43,29 C 44.5,26 47,25 50,25 C 53,25 55.5,26 57,29 Z" fill="#C9A84C" opacity={0.9} />
+      <polygon points="96,50 73,10.2 27,10.2 4,50 27,89.8 73,89.8" fill="#0D0D0D" stroke="#C9A84C" strokeWidth="3.5" strokeLinejoin="round" />
+      <polygon points="90,50 69,15.4 31,15.4 10,50 31,84.6 69,84.6" fill="none" stroke="#C9A84C" strokeWidth="0.9" strokeLinejoin="round" opacity={0.45} />
+      {/* Crown */}
+      <path d="M 50,27 L 44,14 L 48,26 Z" fill="#C9A84C" />
+      <path d="M 50,26 L 50,11 L 52,25 Z" fill="#C9A84C" />
+      <path d="M 50,27 L 56,14 L 52,26 Z" fill="#C9A84C" />
+      {/* Head */}
+      <circle cx="50" cy="32" r="5.5" fill="#C9A84C" />
+      <circle cx="52" cy="31" r="1.4" fill="#0A0A0A" />
+      <path d="M 54,33 L 61,34.5 L 54,36 Z" fill="#C9A84C" opacity={0.8} />
+      {/* Neck */}
+      <path d="M 47,37 C 46,40 46,43 47,45 L 53,45 C 54,43 54,40 53,37 C 52,35 48,35 47,37 Z" fill="#C9A84C" />
+      {/* Body */}
+      <ellipse cx="50" cy="53" rx="5.5" ry="8" fill="#C9A84C" />
+      {/* Left wing */}
+      <path d="M 46,43 C 40,39 28,36 15,38 C 22,32 35,35 46,42 Z" fill="#C9A84C" />
+      <path d="M 46,50 C 37,47 25,46 12,49 C 20,43 34,43 46,51 Z" fill="#C9A84C" opacity={0.75} />
+      {/* Right wing */}
+      <path d="M 54,43 C 60,39 72,36 85,38 C 78,32 65,35 54,42 Z" fill="#C9A84C" />
+      <path d="M 54,50 C 63,47 75,46 88,49 C 80,43 66,43 54,51 Z" fill="#C9A84C" opacity={0.75} />
+      {/* Tail flames */}
+      <path d="M 49,61 C 48,67 46,76 44,87 C 47.5,76 49.5,67 50,63 Z" fill="#C9A84C" />
+      <path d="M 51,61 C 52,67 54,76 56,87 C 52.5,76 50.5,67 50,63 Z" fill="#C9A84C" />
+      <path d="M 48,62 C 44,71 39,81 35,90 C 40,80 46,70 49,64 Z" fill="#C9A84C" opacity={0.65} />
+      <path d="M 52,62 C 56,71 61,81 65,90 C 60,80 54,70 51,64 Z" fill="#C9A84C" opacity={0.65} />
+      <path d="M 47,64 C 40,74 33,85 27,92 C 34,82 43,71 48,66 Z" fill="#C9A84C" opacity={0.35} />
+      <path d="M 53,64 C 60,74 67,85 73,92 C 66,82 57,71 52,66 Z" fill="#C9A84C" opacity={0.35} />
     </svg>
   );
 }
