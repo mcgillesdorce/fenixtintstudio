@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { NAV_LINKS } from "@/lib/constants";
 import { GlossyButton } from "@/components/ui/GlossyButton";
@@ -17,6 +18,13 @@ export function Nav() {
   }, []);
 
   const meetingUrl = getMeetingUrl();
+  const pathname = usePathname();
+
+  // On sub-pages (e.g. /gallery), hash links must be prefixed with / to go back to homepage
+  function resolveHref(href: string) {
+    if (href.startsWith("#") && pathname !== "/") return "/" + href;
+    return href;
+  }
 
   return (
     <header
@@ -33,7 +41,7 @@ export function Nav() {
       >
         {/* Logo */}
         <Link
-          href="#home"
+          href="/"
           className="flex items-center gap-3 focus-visible:ring-1 focus-visible:ring-white/40 rounded"
           aria-label="Fenix Garage Tint Studio — home"
         >
@@ -53,7 +61,7 @@ export function Nav() {
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <Link
-                href={link.href}
+                href={resolveHref(link.href)}
                 className="text-sm text-zinc-400 hover:text-white transition-colors duration-150 focus-visible:ring-1 focus-visible:ring-white/40 rounded"
               >
                 {link.label}
@@ -95,7 +103,7 @@ export function Nav() {
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <Link
-                  href={link.href}
+                  href={resolveHref(link.href)}
                   className="block text-sm text-zinc-400 hover:text-white transition-colors py-1"
                   onClick={() => setMenuOpen(false)}
                 >

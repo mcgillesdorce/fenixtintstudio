@@ -44,8 +44,8 @@ export default function GalleryPage() {
             {/* Stats row */}
             <div className="mt-8 flex flex-wrap items-center gap-6 text-sm">
               <div>
-                <span className="text-brand-gold font-semibold text-lg">{PORTFOLIO_ITEMS.length}</span>
-                <span className="text-zinc-500 ml-1.5 text-xs tracking-wider uppercase">Projects</span>
+                <span className="text-brand-gold font-semibold text-lg">200+</span>
+                <span className="text-zinc-500 ml-1.5 text-xs tracking-wider uppercase">Projects Completed</span>
               </div>
               <div className="h-4 w-px bg-white/10" aria-hidden="true" />
               <div>
