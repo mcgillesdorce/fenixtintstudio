@@ -73,7 +73,7 @@ export function PortfolioSlideshow({ slides, autoPlayMs = 5000 }: Props) {
             src={slide.src}
             alt={slide.alt}
             fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1200px"
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 896px"
             className="object-cover"
             priority={i === 0}
           />
