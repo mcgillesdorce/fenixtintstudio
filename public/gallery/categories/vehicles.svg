@@ -1,0 +1,48 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'>
+  <defs>
+    <radialGradient id='bg' cx='50%' cy='50%' r='65%'>
+      <stop offset='0%' stop-color='#141408'/>
+      <stop offset='100%' stop-color='#0A0A0A'/>
+    </radialGradient>
+  </defs>
+  <rect width='1200' height='800' fill='url(#bg)'/>
+  <!-- Car silhouette outline -->
+  <g fill='none' stroke='#C9A84C' stroke-opacity='0.22' stroke-width='1.5' transform='translate(600,400) scale(3.2)'>
+    <!-- body -->
+    <path d='M-100,10 C-100,10 -80,-20 -40,-28 L20,-32 C20,-32 55,-32 80,-20 L100,10 L100,20 L-100,20 Z'/>
+    <!-- roof -->
+    <path d='M-40,-28 C-20,-42 10,-42 20,-32'/>
+    <!-- windshield -->
+    <line x1='-40' y1='-28' x2='-28' y2='-32'/>
+    <line x1='20' y1='-32' x2='10' y2='-28'/>
+    <!-- front wheel arch -->
+    <path d='M55,-4 A18,18 0 0 1 55,20' stroke-linecap='round'/>
+    <circle cx='55' cy='20' r='14' stroke-opacity='0.18'/>
+    <!-- rear wheel arch -->
+    <path d='M-65,-4 A18,18 0 0 0 -65,20' stroke-linecap='round'/>
+    <circle cx='-65' cy='20' r='14' stroke-opacity='0.18'/>
+    <!-- door line -->
+    <line x1='-12' y1='-30' x2='-12' y2='10' stroke-opacity='0.14'/>
+  </g>
+  <!-- Plus: motorcycle (small size) -->
+  <g fill='none' stroke='#C9A84C' stroke-opacity='0.12' stroke-width='1.2' transform='translate(900,500) scale(1.4)'>
+    <circle cx='0' cy='0' r='22'/>
+    <circle cx='56' cy='0' r='22'/>
+    <path d='M22,-8 L34,-8 L44,-2'/>
+    <path d='M28,-22 L34,-8'/>
+  </g>
+  <!-- Plus: van (large size) -->
+  <g fill='none' stroke='#C9A84C' stroke-opacity='0.1' stroke-width='1.2' transform='translate(280,510) scale(1.5)'>
+    <rect x='-55' y='-22' width='110' height='32' rx='4'/>
+    <circle cx='-36' cy='12' r='10'/>
+    <circle cx='36' cy='12' r='10'/>
+    <line x1='-10' y1='-22' x2='-10' y2='8' stroke-opacity='0.14'/>
+  </g>
+  <!-- Label -->
+  <text x='600' y='278' font-family='system-ui,sans-serif' font-size='11' fill='#C9A84C' text-anchor='middle' letter-spacing='5' opacity='0.5'>FENIX TINT STUDIO</text>
+  <text x='600' y='328' font-family='system-ui,sans-serif' font-size='38' font-weight='200' fill='#C9A84C' text-anchor='middle' letter-spacing='8' opacity='0.85'>VEHICLES</text>
+  <text x='600' y='364' font-family='system-ui,sans-serif' font-size='13' fill='rgba(255,255,255,0.3)' text-anchor='middle' letter-spacing='4'>Cars · Trucks · Vans · Motorcycles · Boats</text>
+  <!-- Replace note -->
+  <rect x='440' y='520' width='320' height='36' rx='4' fill='none' stroke='#C9A84C' stroke-opacity='0.15' stroke-width='0.8'/>
+  <text x='600' y='543' font-family='system-ui,sans-serif' font-size='10' fill='rgba(255,255,255,0.2)' text-anchor='middle' letter-spacing='3'>REPLACE WITH PROJECT PHOTO</text>
+</svg>

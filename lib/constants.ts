@@ -111,14 +111,49 @@ export const TESTIMONIALS = [
   },
 ];
 
-export const GALLERY_ITEMS = [
-  { src: "/gallery/work-01.svg", alt: "Lamborghini exotic supercar with ceramic window tint", caption: "Exotic Supercar — 15% VLT" },
-  { src: "/gallery/work-02.svg", alt: "SUV with dark window tint", caption: "SUV — 20% VLT" },
-  { src: "/gallery/work-03.svg", alt: "Modern commercial storefront with solar control window film", caption: "Commercial Storefront" },
-  { src: "/gallery/work-04.svg", alt: "GT sports coupe with nano-ceramic tint", caption: "GT Sports Coupe — 35% VLT" },
-  { src: "/gallery/work-05.svg", alt: "Residential sunroom film", caption: "Residential — Sunroom" },
-  { src: "/gallery/work-06.svg", alt: "Truck with full window tint", caption: "Truck — Full Package" },
-  { src: "/gallery/work-07.svg", alt: "Track supercar with ceramic tint and rear spoiler", caption: "Track Supercar — 20% VLT" },
-  { src: "/gallery/work-08.svg", alt: "Small commercial office building with solar control window film", caption: "Commercial Office — 3 Stories" },
-  { src: "/gallery/work-09.svg", alt: "Custom decorative window film", caption: "Custom — Decorative Film" },
-];
+// ─── Work categories shown in the gallery section ───────────────────────────
+// To add your project photos:
+//   1. Drop your image into /public/gallery/categories/
+//      Name it: vehicles.jpg (or .png / .webp), commercial.jpg, residential.jpg, custom.jpg
+//   2. Update the `src` field below to point to your new file.
+//      The placeholder SVGs will show until you replace them.
+// Recommended image size: 1200 × 800 px, landscape orientation.
+export const WORK_CATEGORIES = [
+  {
+    id: "vehicles",
+    label: "Vehicles",
+    description: "Cars · Trucks · Vans · Motorcycles · Boats · RVs",
+    // → replace placeholder with your vehicle project photo:
+    src: "/gallery/categories/vehicles.svg",
+    alt: "Window tint on vehicles of all sizes — cars, trucks, vans",
+  },
+  {
+    id: "commercial",
+    label: "Commercial",
+    description: "Storefronts · Office Buildings · Warehouses · Retail",
+    // → replace placeholder with your commercial project photo:
+    src: "/gallery/categories/commercial.svg",
+    alt: "Commercial window film on storefronts and office buildings",
+  },
+  {
+    id: "residential",
+    label: "Residential",
+    description: "Homes · Sunrooms · Sliding Doors · Skylights · Condos",
+    // → replace placeholder with your residential project photo:
+    src: "/gallery/categories/residential.svg",
+    alt: "Residential window film on homes and sunrooms",
+  },
+  {
+    id: "custom",
+    label: "Custom Requests",
+    description: "Decorative · Frosted · Privacy · Specialty Film · Any Glass",
+    // → replace placeholder with your custom project photo:
+    src: "/gallery/categories/custom.svg",
+    alt: "Custom and specialty window film installations",
+  },
+] as const;
+
+// ─── Full portfolio grid (added when project photos are ready) ────────────────
+// Drop photos into /public/gallery/ and add entries here.
+// Format: { src: "/gallery/your-photo.jpg", alt: "...", caption: "..." }
+export const PORTFOLIO_ITEMS: { src: string; alt: string; caption: string }[] = [];

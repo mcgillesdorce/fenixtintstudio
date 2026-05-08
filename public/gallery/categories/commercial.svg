@@ -1,0 +1,34 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'>
+  <defs>
+    <radialGradient id='bg' cx='50%' cy='50%' r='65%'>
+      <stop offset='0%' stop-color='#0A0C14'/>
+      <stop offset='100%' stop-color='#0A0A0A'/>
+    </radialGradient>
+  </defs>
+  <rect width='1200' height='800' fill='url(#bg)'/>
+  <!-- Building silhouette -->
+  <g fill='none' stroke='#C9A84C' stroke-opacity='0.2' stroke-width='1.5' transform='translate(600,420) scale(2.8)'>
+    <!-- Main block -->
+    <rect x='-80' y='-60' width='160' height='80' rx='1'/>
+    <!-- Roof parapet -->
+    <rect x='-84' y='-64' width='168' height='8'/>
+    <!-- Window grid 4x3 -->
+    <rect x='-68' y='-52' width='28' height='18' rx='0.5' stroke-opacity='0.14'/>
+    <rect x='-32' y='-52' width='28' height='18' rx='0.5' stroke-opacity='0.14'/>
+    <rect x='4' y='-52' width='28' height='18' rx='0.5' stroke-opacity='0.14'/>
+    <rect x='40' y='-52' width='28' height='18' rx='0.5' stroke-opacity='0.14'/>
+    <rect x='-68' y='-26' width='28' height='18' rx='0.5' stroke-opacity='0.14'/>
+    <rect x='-32' y='-26' width='28' height='18' rx='0.5' stroke-opacity='0.14'/>
+    <rect x='4' y='-26' width='28' height='18' rx='0.5' stroke-opacity='0.14'/>
+    <rect x='40' y='-26' width='28' height='18' rx='0.5' stroke-opacity='0.14'/>
+    <!-- Entry door -->
+    <rect x='-14' y='-4' width='28' height='24'/>
+    <!-- Floor line -->
+    <line x1='-84' y1='20' x2='84' y2='20' stroke-opacity='0.3'/>
+  </g>
+  <text x='600' y='278' font-family='system-ui,sans-serif' font-size='11' fill='#C9A84C' text-anchor='middle' letter-spacing='5' opacity='0.5'>FENIX TINT STUDIO</text>
+  <text x='600' y='328' font-family='system-ui,sans-serif' font-size='38' font-weight='200' fill='#C9A84C' text-anchor='middle' letter-spacing='8' opacity='0.85'>COMMERCIAL</text>
+  <text x='600' y='364' font-family='system-ui,sans-serif' font-size='13' fill='rgba(255,255,255,0.3)' text-anchor='middle' letter-spacing='4'>Storefronts · Office Buildings · Warehouses</text>
+  <rect x='440' y='520' width='320' height='36' rx='4' fill='none' stroke='#C9A84C' stroke-opacity='0.15' stroke-width='0.8'/>
+  <text x='600' y='543' font-family='system-ui,sans-serif' font-size='10' fill='rgba(255,255,255,0.2)' text-anchor='middle' letter-spacing='3'>REPLACE WITH PROJECT PHOTO</text>
+</svg>
