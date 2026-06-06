@@ -44,7 +44,7 @@ export function Hero() {
 
         <Reveal delay={0.1}>
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-light tracking-tight text-white text-balance leading-none">
-            Precisio Tinting.
+            Precision Tinting.
             <br />
             <span className="text-zinc-400">Premium Finish.</span>
           </h1>
